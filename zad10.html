@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_gradzewicz() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<div style="color:green;font-size:40px;">
+<script language="JavaScript">
+var liczba1_gra=prompt("podaj liczbe=","");
+var m_gra=parseFloat(liczba1_gra);
+document.write("postać dziesietna: "+1/m_gra+"="+(1/(m_gra+1))+"+"+(1/(m_gra*(m_gra+1)))+"<br>");
+document.write("postać ułamkowa: "+1+"/"+m_gra+"="+1+"/"+(m_gra+1)+"+"+1+"/"+(m_gra*(m_gra+1))+"<br>");
+ </script>
+ </div><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_gradzewicz()"/>
+</body>
+</html>

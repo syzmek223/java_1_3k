@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    function okno_zamknij_Gradzewicz()
+    {
+    window.close()
+    }
+    </script>
+   <textarea>
+    <html>
+        <body>
+        <div style="color:purple;font-size:100px;">
+        <script language="JavaScript">
+        var liczba1=prompt("x=","");
+        var liczba2=prompt("y=","");
+        
+        var x_g=parseFloat(liczba1);
+        var y_g=parseFloat(liczba2);
+        
+        document.write("wczytane liczby"+" x="+x_g+" y="+y_g+"<br>");
+        document.write("("+x_g+"+"+y_g+")^3 = "+x_g+"^3 + 3*(("+x_g+")^2)*("+y_g+") + 3*("+x_g+")*(("+y_g+")^2) + "+y_g+"^3 =");
+        document.write(Math.pow(x_g,3) + 3*Math.pow(x_g,2)*y_g + 3*x_g*Math.pow(y_g,2) + Math.pow(y_g,3));
+        
+        
+        </script>
+        </div>
+        </body>
+        </html>
+        
+   </textarea><br>
+   <input type="button" value="zamknij okno" onclick="okno_zamknij_Gradzewicz()">

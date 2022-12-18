@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <script type="text/javascript">
+    function okno_zamknij_Gradzewicz() 
+     {
+     window.close()
+     }
+    </script>
+    </head>
+    <body>
+    <div style="color: green;font: size 42px;">
+
+     <script language="JavaScript">
+              var liczba1_gra=prompt("1 dzien=","");
+              var liczba2_gra=prompt("2 dzien=","");
+              var ile_sekund_gra;
+              var d1_gra=parseFloat(liczba1_gra);
+    var d2_gra=parseFloat(liczba2_gra);
+    ile_sekund_gra=d1_gra*86400-d2_gra*86400;
+    document.write("ile_sekund="+ile_sekund_gra+"<br>");
+     </script>
+     <br>
+
+
+     <input type="button" value="zamknij okno" onclick="okno_zamknij_Gradzewicz()"/>
+    </div>
+    </body>
+    </html>
+     

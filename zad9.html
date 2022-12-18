@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_gradzewicz() 
+ {
+ window.close()
+ }
+
+</script>
+</head>
+<body>
+<div style="color:green;font-size:42px;">
+ <script language="JavaScript">
+
+var liczba1_gra=prompt("1 dzien=","");
+var liczba2_gra=prompt("2 dzien=","");
+var liczba3_gra=prompt("1 godzina=","");
+var liczba4_gra=prompt("2 godzina=","");
+
+var ile_sekund_gra;
+
+var d1_gra=parseFloat(liczba1_gra);
+var d2_gra=parseFloat(liczba2_gra);
+var g1_gra=parseFloat(liczba3_gra);
+var g2_gra=parseFloat(liczba4_gra);
+
+ile_sekund_gra=(d1_gra*86400+g1_gra*3600)-(d2_gra*86400+g2_gra*3600);
+document.write("ile_sekund="+ile_sekund_gra+"<br>");
+ </script>
+</div><br>
+
+<input type="button" value="zamknij okno" onclick="okno_zamknij_gradzewicz()"/>
+</body>
+</html>
